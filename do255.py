@@ -754,7 +754,7 @@ def Keygen(curve, sh = None):
         sk = curve.SF.DecodeReduce(bb[curve.encodedLen * j:])
         if not sk.is_zero():
             return sk
-	j += 1
+        j += 1
 
 def EncodePrivate(sk):
     """
